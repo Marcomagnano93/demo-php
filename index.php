@@ -6,13 +6,21 @@
     <title>Demo</title>
 </head>
 <body>
+    <!-- PHP CONDITIONS -->
+    <?php 
+    $condition = true;
+
+    if($condition){
+        $message = "Hai ragione";
+    } else {
+        $message = "No!";
+    };
+    ?>
 
     <h1>
-        <?php 
-            $greeting = "Hello";
-            echo "$greeting World";
-        ?>
+        <?= $message ?>
     </h1>
+
 
 </body>
 </html>
