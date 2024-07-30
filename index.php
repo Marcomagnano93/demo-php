@@ -8,7 +8,15 @@
 <body>
     <!-- PHP CONDITIONS -->
     <?php 
+    $names = [
+        "Luca",
+        "Paolo",
+        "Marco"
+    ];
+
+
     $condition = true;
+
 
     if($condition){
         $message = "Hai ragione";
@@ -21,6 +29,12 @@
         <?= $message ?>
     </h1>
 
+    <!-- PHP Array & foreach -->
+     <ol>
+        <?php foreach ($names as $name) : ?>
+        <li><?= $name ?></li>
+        <?php endforeach ?>
+     </ol>
 
 </body>
 </html>
