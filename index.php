@@ -30,6 +30,21 @@
                 'name' => 'Alessia',
                 'age' => 21,
                 'adress' => "Palermo"
+            ],
+            [
+                'name' => 'Andrea',
+                'age' => 16,
+                'adress' => "Milano"
+            ],
+            [
+                'name' => 'Marika',
+                'age' => 72,
+                'adress' => "Torino"
+            ],
+            [
+                'name' => 'Alex',
+                'age' => 34,
+                'adress' => "Palermo"
             ]
         ];
 
@@ -66,6 +81,24 @@
         
         return $filteredMovies;
     }
+
+    function filter ($items, $fn) {
+        $filteredItems = [];
+
+        foreach ($items as $item){
+            if($fn($item)){
+                $filteredItems[] = $item;
+            }
+        }
+
+        return $filteredItems;
+    }
+    // Lambda functions [funzioni anonime]
+
+    $filterByAdress = filter($people, function ($person){
+
+        return $person['adress'] === 'Torino';
+    });
 
     // if / else
     $condition = true;
@@ -110,5 +143,14 @@
         <?php endforeach ?>
       </ol>
 
+      <!-- PHP Lambda Function -->
+       <h2>Lambda Function (anonymous functions)</h2>
+       <h5>Persone filtrate per indirizzo(Torino):</h5>
+       <ul>
+        <?php foreach ($filterByAdress as $person) : ?>
+            <li><?= $person['name'] ?></li>
+            <li><?= $person['adress'] ?></li> <hr>
+        <?php endforeach ?>
+       </ul>
 </body>
 </html>
