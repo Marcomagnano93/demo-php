@@ -33,12 +33,46 @@
             ]
         ];
 
+    $movies = [
+        [
+            'title' => 'Star Wars',
+            'relaseDate' => '1987'
+        ],
+        [
+            'title' => 'Gremlins',
+            'relaseDate' => '1980'
+        ],
+        [
+            'title' => 'Lost',
+            'relaseDate' => '2007'
+        ],
+        [
+            'title' => 'Inception',
+            'relaseDate' => '2011'
+        ],
+    ];
+
+    // Functions
+
+    function filterByRelase ($movies) {
+        $filteredMovies = [];
+
+        foreach ($movies as $movie) {
+            if($movie['relaseDate'] > 2000) {
+                $filteredMovies[] = $movie;
+            }
+
+        }
+        
+        return $filteredMovies;
+    }
+
     // if / else
     $condition = true;
 
 
     if($condition){
-        $message = "Hai ragione";
+        $message = "Questa è la Demo";
     } else {
         $message = "No!";
     };
@@ -66,7 +100,15 @@
             <li>Età: <?= $person['age']; ?></li>
             <li>Indirizzo: <?= $person['adress']; ?></li> <hr>
         <?php endforeach ?>
-
      </ul>
+
+     <!-- PHP Function filter -->
+      <h2>Filter Function</h2>
+      <ol>
+        <?php foreach (filterByRelase($movies) as $movie) : ?>
+            <li>Titolo: <?= $movie['title']; ?></li>
+        <?php endforeach ?>
+      </ol>
+
 </body>
 </html>
