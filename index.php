@@ -100,6 +100,10 @@
         return $person['adress'] === 'Torino';
     });
 
+    $filteredByAge = filter($people, function ($person){
+        return $person['age'] >= 30;
+    });
+
     // if / else
     $condition = true;
 
@@ -151,6 +155,13 @@
             <li><?= $person['name'] ?></li>
             <li><?= $person['adress'] ?></li> <hr>
         <?php endforeach ?>
+       </ul>
+       <h5>Persone filtrate per età (maggiori di 30 anni):</h5>
+       <ul>
+        <?php foreach ($filteredByAge as $person) : ?>
+            <li><?= $person['name'] ?></li>
+            <li><?= $person['age'] ?></li> <hr>
+        <?php endforeach ?>    
        </ul>
 </body>
 </html>
