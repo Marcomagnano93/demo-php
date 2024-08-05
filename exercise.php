@@ -1,6 +1,7 @@
     <!-- PHP CONDITIONS -->
     <?php 
-
+    require 'functions.php';
+    
     $heading = 'exercise';
     // array
     $names = [
