@@ -1,8 +1,13 @@
-<?php 
+<?php
 require 'functions.php';
 
-$heading = 'home';
+$uri = $_SERVER['REQUEST_URI'];
 
+if ($uri === '/'){
+    require 'controllers/index.php';
+}
+elseif ($uri === '/exercise') {
+    require 'controllers/exercise.php';
+}
 
 // dd($_SERVER);
-require "index.view.php";

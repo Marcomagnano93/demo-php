@@ -1,6 +1,6 @@
     <!-- PHP CONDITIONS -->
     <?php 
-    require 'functions.php';
+    
     
     $heading = 'exercise';
     // array
@@ -109,4 +109,4 @@
         $message = "No!";
     };
     
-require "exercise.view.php";
+require "view/exercise.view.php";
