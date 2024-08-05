@@ -1,0 +1,42 @@
+/* RESET */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    color: currentColor;
+    font-style: italic;
+    text-decoration: none;
+
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: lightblue;
+    color: white;
+    padding: 24px 0 24px 0;
+}
+
+.navbar {
+    display: flex;
+    gap: 12px;
+    font-size: 32px;
+}
+
+.navcontainer{
+    margin: 0 32px 0 0;
+}
+
+.logo{
+    margin: 0 12px 0 12px;
+}
+
+
