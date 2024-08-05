@@ -25,6 +25,7 @@ header{
     padding: 24px 0 24px 0;
 }
 
+/* NAVBAR */
 .navbar {
     display: flex;
     gap: 12px;
@@ -35,6 +36,13 @@ header{
     margin: 0 32px 0 0;
 }
 
+.link {
+    color: lightseagreen;
+}
+
+.currentlink{
+    color: blueviolet;
+}
 .logo{
     margin: 0 12px 0 12px;
 }
