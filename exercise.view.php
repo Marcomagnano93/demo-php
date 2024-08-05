@@ -57,7 +57,7 @@
        </ul>
     </main>
     <footer>
-
+    <?php require 'partials/footer.php' ?>
     </footer>
   
 </body>

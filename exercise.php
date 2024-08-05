@@ -1,5 +1,7 @@
     <!-- PHP CONDITIONS -->
     <?php 
+
+    $heading = 'exercise';
     // array
     $names = [
         "Luca",
