@@ -10,7 +10,19 @@
 <?php require 'partials/nav.php' ?>
     </header>
     <main>
-        <h1>Pagina non trovata!</h1>
+        <div class="container ">
+            <div class="row gap12 mtop">
+                <div>
+                    <h1>Pagina non trovata!</h1>
+                </div>
+
+                <div class="backhome">
+                    <a href="/">Home</a>
+                </div>
+            </div>
+        </div>
+
+
     </main>
     <footer>
 <?php require 'partials/footer.php' ?>

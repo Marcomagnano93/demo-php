@@ -25,6 +25,19 @@ header{
     padding: 24px 0 24px 0;
 }
 
+.backhome {
+    color: brown;
+    width: 32px;
+    padding: 12px 24px;
+    cursor: pointer;
+    background-color: aquamarine;
+    border-radius: 999px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* NAVBAR */
 .navbar {
     display: flex;
@@ -45,6 +58,27 @@ header{
 }
 .logo{
     margin: 0 12px 0 12px;
+}
+
+/* LAYOUT */
+
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* utilities */
+.mtop {
+    margin: 24px 0;
+}
+
+.gap12{
+    gap: 12px;
 }
 
 
